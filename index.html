@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Material Design Lite</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+
+<body>
+    <!--Main Container-->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <!-- Header Start -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id="header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">Material Design Lite</span>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation. We hide it in small screens. -->
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                        <a class="mdl-navigation__link" href="https://github.com/jslzr27/Material-design--lite"
+                            target="_blank">Github</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Title</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <!-- Your content goes here -->
+                </div>
+            </main>
+        </div>
+
+        <!--Sidebar-->
+        <div class="mdl-layout__drawer" id="drawer">
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#badges">Badges</a>
+                <a class="mdl-navigation__link" href="#buttons">Buttons</a>
+                <a class="mdl-navigation__link" href="#cards">Cards</a>
+                <a class="mdl-navigation__link" href="#chips">Chips</a>
+                <a class="mdl-navigation__link" href="#dialogs">Dialogs</a>
+                <a class="mdl-navigation__link" href="#layout">Layout</a>
+                <a class="mdl-navigation__link" href="#lists">Lists</a>
+                <a class="mdl-navigation__link" href="#loading">Loading</a>
+                <a class="mdl-navigation__link" href="#menus">Menus</a>
+                <a class="mdl-navigation__link" href="#sliders">Sliders</a>
+                <a class="mdl-navigation__link" href="#snackbar">Snackbar</a>
+                <a class="mdl-navigation__link" href="#toggles">Toggles</a>
+                <a class="mdl-navigation__link" href="#tables">Tables</a>
+                <a class="mdl-navigation__link" href="#textfields">Textfields</a>
+                <a class="mdl-navigation__link" href="#tooltips">Tooltips</a>
+            </nav>
+        </div>
+        <!--Content-->
+        <main class="mdl-layout__content">
+            <div class="page-content">
+
+                <!--BADGES-->
+                <div class="component-mdl" id="badges">
+                    <h3>Badges</h3>
+                    <h5>Description</h5>
+                    <p>The Material Design Lite (MDL) badge component is an onscreen notification element. A badge
+                        consists of a small circle, typically containing a number or other characters, that appears in
+                        proximity to another object. A badge can be both a notifier that there are additional items
+                        associated with an object and an indicator of how many items there are.</p>
+                    <h5>Uses</h5>
+                    <p>This feature can be used for:</p>
+                    <ul>
+                        <li>Notifications</li>
+                        <li>Updates</li>
+                        <li>Messages</li>
+                    </ul>
+                    <h5>Examples</h5>
+                    <div class="example">
+                        <div class="comp-example">
+                            <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">account_box</div>
+                            <p>Number badge on icon</p>
+                        </div>
+                        <div class="comp-example">
+                            <span class="mdl-badge" data-badge="♥">Mood</span>
+                            <p>Icon badge</p>
+                        </div>
+                        <div class="comp-example">
+                            <a href="#" class="mdl-badge" data-badge="7">This link contains a badge.</a>
+                            <p>A badge inside a link</p>
+                        </div>
+                        <div class="comp-example">
+                            <a href="#" class="mdl-badge mdl-badge--no-background" data-badge="123">
+                                This badge has no background color.</a>
+                            <p>A badge inside a link with no badge background color.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--BUTTONS-->
+                <div class="component-mdl" id="buttons">
+                    <h3>Buttons</h3>
+                    <h5>Description</h5>
+                    <p>The Material Design Lite (MDL) button component is an enhanced version of the standard HTML
+                        <code>&lt;button&gt;</code> element. A button consists of text and/or an image that clearly
+                        communicates what
+                        action will occur when the user clicks or touches it. The MDL button component provides
+                        various types of buttons, and allows you to add both display and click effects.</p>
+                    <h5>Uses</h5>
+                    <p>This feature can be used for:</p>
+                    <ul>
+                        <li>Submitting forms</li>
+                        <li>Links</li>
+                        <li>Open other app features</li>
+                    </ul>
+                    <h5>Examples</h5>
+                    <div class="example">
+                        <div class="comp-example">
+                            <button class="mdl-button mdl-js-button">Save</button>
+                            <p>A simple MDL flat button</p>
+                        </div>
+                        <div class="comp-example">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                                Button
+                            </button>
+                            <p>A button with a raised effect</p>
+                        </div>
+                        <div class="comp-example">
+                            <button class="mdl-button mdl-js-button mdl-button--fab">
+                                <i class="material-icons">add</i>
+                            </button>
+                            <p>A button with the fab effect</p>
+                        </div>
+                        <div class="comp-example">
+                            <button
+                                class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+                                <i class="material-icons">add</i>
+                            </button>
+                            <p>A button with the "icon" and "colored" effects.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--CARDS-->
+                <div class="component-mdl" id="cards">
+                    <h3>Cards</h3>
+                    <h5>Description</h5>
+                    <p>The Material Design Lite (MDL) card component is a user interface element representing a virtual
+                        piece of paper that contains related data — such as a photo, some text, and a link — that are
+                        all about a single subject.
+                        <br>
+                        Cards are a convenient means of coherently displaying related content that is composed of
+                        different types of objects. They are also well-suited for presenting similar objects whose size
+                        or supported actions can vary considerably, like photos with captions of variable length. Cards
+                        have a constant width and a variable height, depending on their content.</p>
+                    <h5>Uses</h5>
+                    <p>This feature can be used for:</p>
+                    <ul>
+                        <li>Show informationin an elegant way</li>
+                        <li>Allows to write details without visually cramping the main content</li>
+                        <li>Together with other features such as buttons can be used for e-commerce to sell products
+                        </li>
+                    </ul>
+                    <h5>Examples</h5>
+                    <div class="example">
+                        <div class="comp-example">
+                            <div class="mdl-card">
+                                <div class="mdl-card__title">
+                                    <h2 class="mdl-card__title-text">Auckland Sky Tower<br>Auckland, New Zealand</h2>
+                                </div>
+                                <div class="mdl-card__media">
+                                    <img src="skytower.jpg" width="173" height="157" border="0" alt=""
+                                        style="padding:10px;">
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    The Sky Tower is an observation and telecommunications tower located in Auckland,
+                                    New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made
+                                    structure
+                                    in the Southern Hemisphere.
+                                </div>
+                                <div class="mdl-card__actions">
+                                    <a href="http://en.wikipedia.org/wiki/Sky_Tower_%28Auckland%29">Wikipedia entry</a>
+                                </div>
+                            </div>
+                            <p>A card (no shadow) with a title, image, text, and action.</p>
+                        </div>
+                        <div class="comp-example">
+                            <div class="mdl-card mdl-shadow--4dp">
+                                <div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0"
+                                        alt="" style="padding:10px;">
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    Auckland Sky Tower, taken March 24th, 2014
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    The Sky Tower is an observation and telecommunications tower located in Auckland,
+                                    New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made
+                                    structure
+                                    in the Southern Hemisphere.
+                                </div>
+                            </div>
+                            <p>Card (level-3 shadow) with an image, caption, and text:</p>
+                        </div>
+                        <div class="comp-example">
+                            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand">
+                                    <h2 class="mdl-card__title-text">Update</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aenan convallis.
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        View Updates
+                                    </a>
+                                </div>
+                            </div>
+                            <p>A squared card with a button</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--CHIPS-->
+                <div class="component-mdl" id="chips">
+                    <h3>Chips</h3>
+                    <h5>Description</h5>
+                    <p>The Material Design Lite (MDL) chip component is a small, interactive element.</p>
+                    <h5>Uses</h5>
+                    <p>This feature can be used for:</p>
+                    <ul>
+                        <li>Contacts</li>
+                        <li>Text</li>
+                        <li>Rules</li>
+                        <li>Icons</li>
+                        <li>Photos</li>
+                    </ul>
+                    <h5>Examples</h5>
+                    <div class="example">
+                        <div class="comp-example">
+                            <button class="mdl-chip demo-chip">
+                                <span class="mdl-chip__contact">&nbsp;</span>
+                                <span class="mdl-chip__text">Chip Text</span>
+                                <a href="#" class="mdl-chip__action"><i class="material-icons">cancel</i></a>
+                            </button>
+                            <p>A button based contact chip whose contact image is a <code>&lt;span&gt;</code> with a
+                                <code>background-image</code>.</p>
+                        </div>
+                        <div class="comp-example">
+                            <span class="mdl-chip">
+                                <span class="mdl-chip__text">Basic Chip</span>
+                            </span>
+                            <p>A basic chip</p>
+                        </div>
+                        <div class="comp-example">
+                            <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
+                                <img class="mdl-chip__contact"
+                                    src="https://getmdl.io/templates/dashboard/images/user.jpg"></img>
+                                <span class="mdl-chip__text">Deletable Contact Chip</span>
+                                <a href="#" class="mdl-chip__action"><i class="material-icons">cancel</i></a>
+                            </span>
+                            <p>A deletable contact chip</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--DIALOGS-->
+                <div class="component-mdl" id="dialogs">
+                    <h3>Dialogs</h3>
+                    <h5>Description</h5>
+                    <p>The Material Design Lite (MDL) dialog component allows for verification of user actions, simple
+                        data input, and alerts to provide extra information to users.</p>
+                    <h5>Uses</h5>
+                    <p>This feature can be used for:</p>
+                    <ul>
+                        <li>Confirmation of form submit</li>
+                        <li>Alerts</li>
+                        <li>Important messages</li>
+                    </ul>
+                    <h5>Examples</h5>
+                    <div class="example">
+                        <div class="comp-example">
+                            <button type="button" class="mdl-button show-modal">Show Modal</button>
+                            <dialog class="mdl-dialog">
+                                <div class="mdl-dialog__content">
+                                    <p>
+                                        Allow this site to collect usage data to improve your experience?
+                                    </p>
+                                </div>
+                                <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+                                    <button type="button" class="mdl-button">Agree</button>
+                                    <button type="button" class="mdl-button close">Disagree</button>
+                                </div>
+                            </dialog>
+                            <p>A dialog with full width actions</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--LAYOUT-->
+                <div class="component-mdl" id="layout">
+                    <h3>Layout</h3>
+                    <h5>Description</h5>
+                    <p>The Material Design Lite (MDL) grid component is a simplified method for laying out content for
+                        multiple screen sizes. It reduces the usual coding burden required to correctly display blocks
+                        of content in a variety of display conditions.</p>
+                    <h5>Uses</h5>
+                    <p>This feature can be used for:</p>
+                    <ul>
+                        <li>Defining a set of rules for the layout of you website</li>
+                        <li>Adding responsivenes to your site</li>
+                        <li>Structuring your site</li>
+                    </ul>
+                    <h5>Examples</h5>
+                    <div class="example">
+                        <div class="comp-example">
+                            <div class="mdl-layout mdl-js-layout">
+                                <header class="mdl-layout__header">
+                                    <div class="mdl-layout-icon"></div>
+                                    <div class="mdl-layout__header-row">
+                                        <span class="mdl-layout__title">Material Design Lite</span>
+                                        <div class="mdl-layout-spacer"></div>
+                                        <nav class="mdl-navigation">
+                                            <a class="mdl-navigation__link" href="#">Hello</a>
+                                            <a class="mdl-navigation__link" href="#">World.</a>
+                                            <a class="mdl-navigation__link" href="#">How</a>
+                                            <a class="mdl-navigation__link" href="#">Are</a>
+                                            <a class="mdl-navigation__link" href="#">You?</a>
+                                        </nav>
+                                    </div>
+                                </header>
+                                <div class="mdl-layout__drawer">
+                                    <span class="mdl-layout__title">Material Design Lite</span>
+                                    <nav class="mdl-navigation">
+                                        <a class="mdl-navigation__link" href="#">Hello</a>
+                                        <a class="mdl-navigation__link" href="#">World.</a>
+                                        <a class="mdl-navigation__link" href="#">How</a>
+                                        <a class="mdl-navigation__link" href="#">Are</a>
+                                        <a class="mdl-navigation__link" href="#">You?</a>
+                                    </nav>
+                                </div>
+                                <main class="mdl-layout__content">
+                                    <div>Content</div>
+                                </main>
+                            </div>
+                            <p>A layout with a fixed header for larger screens and a collapsible drawer for smaller
+                                screens.</p>
+                        </div>
+                        <div class="comp-example">
+                            <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+                                <div class="mdl-layout__drawer">
+                                    <span class="mdl-layout-title">Title</span>
+                                    <nav class="mdl-navigation">
+                                        <a class="mdl-navigation__link" href="">Link</a>
+                                        <a class="mdl-navigation__link" href="">Link</a>
+                                        <a class="mdl-navigation__link" href="">Link</a>
+                                        <a class="mdl-navigation__link" href="">Link</a>
+                                    </nav>
+                                </div>
+                                <main class="mdl-layout__content">
+                                    <div class="page-content">
+                                        <!-- Your content goes here -->
+                                    </div>
+                                </main>
+                            </div>
+                            <p>No header, and the drawer stays open on larger screens (fixed drawer).</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--LISTS-->
+                <div class="component-mdl" id="lists">
+                    <h3>Lists</h3>
+                    <h5>Description</h5>
+                    <p>Lists present multiple line items vertically as a single continuous element.</p>
+                    <h5>Uses</h5>
+                    <p>This feature can be used for:</p>
+                    <ul>
+                        <li>Showing items in an organized way</li>
+                        <li>Helps you find an item easier</li>
+                    </ul>
+                    <h5>Examples</h5>
+                    <div class="example">
+                        <div class="comp-example">
+                            <ul class="demo-list-item mdl-list">
+                                <li class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                        Bryan Cranston
+                                    </span>
+                                </li>
+                                <li class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                        Aaron Paul
+                                    </span>
+                                </li>
+                                <li class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                        Bob Odenkirk
+                                    </span>
+                                </li>
+                            </ul>
+                            <p>Simple list</p>
+                        </div>
+                        <div class="comp-example">
+                            <ul class="demo-list-control mdl-list">
+                                <li class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                                        Bryan Cranston
+                                    </span>
+                                    <span class="mdl-list__item-secondary-action">
+                                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
+                                            for="list-checkbox-1">
+                                            <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input"
+                                                checked />
+                                        </label>
+                                    </span>
+                                </li>
+                                <li class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                                        Aaron Paul
+                                    </span>
+                                    <span class="mdl-list__item-secondary-action">
+                                        <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect"
+                                            for="list-option-1" style="display: inline;">
+                                            <input type="radio" id="list-option-1" class="mdl-radio__button"
+                                                name="options" value="1" checked />
+                                        </label>
+                                    </span>
+                                </li>
+                                <li class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                                        Bob Odenkirk
+                                    </span>
+                                    <span class="mdl-list__item-secondary-action">
+                                        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect"
+                                            for="list-switch-1">
+                                            <input type="checkbox" id="list-switch-1" class="mdl-switch__input"
+                                                checked />
+                                        </label>
+                                    </span>
+                                </li>
+                            </ul>
+                            <p>List with avatar and controls</p>
+                        </div>
+                        <div class="comp-example">
+                            <ul class="demo-list-three mdl-list" style="width: 650px;">
+                                <li class="mdl-list__item mdl-list__item--three-line">
+                                    <span class="mdl-list__item-primary-content">
+                                        <i class="material-icons mdl-list__item-avatar">person</i>
+                                        <span>Bryan Cranston</span>
+                                        <span class="mdl-list__item-text-body">
+                                            Bryan Cranston played the role of Walter in Breaking Bad. He is also known
+                                            for playing Hal in Malcom in the Middle.
+                                        </span>
+                                    </span>
+                                    <span class="mdl-list__item-secondary-content">
+                                        <a class="mdl-list__item-secondary-action" href="#"><i
+                                                class="material-icons">star</i></a>
+                                    </span>
+                                </li>
+                                <li class="mdl-list__item mdl-list__item--three-line">
+                                    <span class="mdl-list__item-primary-content">
+                                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                                        <span>Aaron Paul</span>
+                                        <span class="mdl-list__item-text-body">
+                                            Aaron Paul played the role of Jesse in Breaking Bad. He also featured in
+                                            the "Need For Speed" Movie.
+                                        </span>
+                                    </span>
+                                    <span class="mdl-list__item-secondary-content">
+                                        <a class="mdl-list__item-secondary-action" href="#"><i
+                                                class="material-icons">star</i></a>
+                                    </span>
+                                </li>
+                                <li class="mdl-list__item mdl-list__item--three-line">
+                                    <span class="mdl-list__item-primary-content">
+                                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                                        <span>Bob Odenkirk</span>
+                                        <span class="mdl-list__item-text-body">
+                                            Bob Odinkrik played the role of Saul in Breaking Bad. Due to public fondness
+                                            for the
+                                            character, Bob stars in his own show now, called "Better Call Saul".
+                                        </span>
+                                    </span>
+                                    <span class="mdl-list__item-secondary-content">
+                                        <a class="mdl-list__item-secondary-action" href="#"><i
+                                                class="material-icons">star</i></a>
+                                    </span>
+                                </li>
+                            </ul>
+                            <p>Three Line List with secondary info and action</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--LOADING-->
+                <div class="component-mdl" id="loading">
+                    <h3>Loading</h3>
+                    <h5>Description</h5>
+                    <p>The Material Design Lite (MDL) progress component is a visual indicator of background activity in
+                        a web page or application. A progress indicator consists of a (typically) horizontal bar
+                        containing some animation that conveys a sense of motion. While some progress devices indicate
+                        an approximate or specific percentage of completion, the MDL progress component simply
+                        communicates the fact that an activity is ongoing and is not yet complete.</p>
+                    <h5>Uses</h5>
+                    <p>This feature can be used for:</p>
+                    <ul>
+                        <li>Providing user with a visual indication of a process</li>
+                    </ul>
+                    <h5>Examples</h5>
+                    <div class="example">
+                        <div class="comp-example">
+                            <div id="p1" class="mdl-progress mdl-js-progress"></div>
+                            <p>A simple MDL progress indicator.</p>
+                        </div>
+                        <div class="comp-example">
+                            <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+                            <p>MDL Progress Bar with Indeterminate Progress</p>
+                        </div>
+                        <div class="comp-example">
+                            <div class="mdl-spinner mdl-js-spinner is-active"></div>
+                            <p>MDL Spinner Component</p>
+                        </div>
+                        <div class="comp-example">
+                            <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+                            <p>MDL Spinner Component with Single Color</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--MENUS-->
+                <div class="component-mdl" id="menus">
+                    <h3>Menus</h3>
+                    <h5>Description</h5>
+                    <p>The Material Design Lite (MDL) menu component is a user interface element that allows users to
+                        select one of a number of options. The selection typically results in an action initiation, a
+                        setting change, or other observable effect. Menu options are always presented in sets of two or
+                        more, and options may be programmatically enabled or disabled as required. The menu appears when
+                        the user is asked to choose among a series of options, and is usually dismissed after the choice
+                        is made.</p>
+                    <h5>Uses</h5>
+                    <p>This feature can be used for:</p>
+                    <ul>
+                        <li>Letting the users choose what they want to do</li>
+                        <li>Showing users the options they have</li>
+                    </ul>
+                    <h5>Examples</h5>
+                    <div class="example">
+                        <div class="comp-example">
+                            <button id="menu-speed" class="mdl-button mdl-js-button mdl-button--icon">
+                                <i class="material-icons">more_vert</i>
+                            </button>
+                            <ul class="mdl-menu mdl-js-menu" for="menu-speed">
+                                <li class="mdl-menu__item">Fast</li>
+                                <li class="mdl-menu__item">Medium</li>
+                                <li class="mdl-menu__item">Slow</li>
+                            </ul>
+                            <p>A menu with three options</p>
+                        </div>
+                        <!-- <div class="comp-example">
+                            <button id="menu-speed" class="mdl-button mdl-js-button mdl-button--icon">
+                                <i class="material-icons">more_vert</i>
+                                </button>
+                            <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect" for="menu-speed">
+                                <li class="mdl-menu__item">Fast</li>
+                                <li class="mdl-menu__item">Medium</li>
+                                <li class="mdl-menu__item">Slow</li>
+                            </ul>
+                            <p>A menu with three options, with ripple effect on button and option links.</p>
+                        </div>
+                        <div class="comp-example">
+                            <button id="menu-speed" class="mdl-button mdl-js-button mdl-button--icon">
+                                <i class="material-icons">more_vert</i>
+                            </button>
+                            <ul class="mdl-menu mdl-js-menu" for="menu-speed">
+                                <li class="mdl-menu__item">Fast</li>
+                                <li class="mdl-menu__item" disabled>Medium</li>
+                                <li class="mdl-menu__item">Slow</li>
+                            </ul>
+                            <p>A menu with three options, the second of which is disabled by default.</p>
+                        </div> -->
+                    </div>
+                </div>
+                <!--SLIDERS-->
+                <div class="component-mdl" id="sliders">
+                    <h3>Sliders</h3>
+                    <h5>Description</h5>
+                    <p>The Material Design Lite (MDL) slider component is an enhanced version of the new HTML5<code>&lt;input
+                            type="range"&gt;</code> element. A slider consists of a horizontal line upon which sits a
+                        small,
+                        movable disc (the thumb) and, typically, text that clearly communicates a value that will be set
+                        when the user moves it.</p>
+                    <h5>Uses</h5>
+                    <p>This feature can be used for:</p>
+                    <ul>
+                        <li>Allowing users to choose a value from a determined range</li>
+                        <li>Enhancing user experienve on mobile devices</li>
+                    </ul>
+                    <h5>Examples</h5>
+                    <div class="example">
+                        <div class="comp-example">
+                            <p style="width:300px">
+                                <input class="mdl-slider mdl-js-slider" type="range" id="s1" min="0" max="10" value="4"
+                                    step="1">
+                            </p>
+                            <p>A slider that controls volume</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--SNACKBAR-->
+                <div class="component-mdl" id="snackbar">
+                    <h3>Snackbar</h3>
+                    <h5>Description</h5>
+                    <p>The Material Design Lite (MDL) snackbar component is a container used to notify a user of an
+                        operation's status. It displays at the bottom of the screen. A snackbar may contain an action
+                        button to execute a command for the user. Actions should undo the committed action or retry it
+                        if it failed for example. Actions should not be to close the snackbar. By not providing an
+                        action, the snackbar becomes a toast component.</p>
+                    <h5>Uses</h5>
+                    <p>This feature can be used for:</p>
+                    <ul>
+                        <li>Showing users the status of a process</li>
+                        <li>Displaying quick notifications</li>
+                    </ul>
+                    <h5>Examples</h5>
+                    <div class="example">
+                        <div class="comp-example">
+                            <button id="demo-show-toast" class="mdl-button mdl-js-button mdl-button--raised"
+                                type="button">Show Toast</button>
+                            <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+                                <div class="mdl-snackbar__text"></div>
+                                <button class="mdl-snackbar__action" type="button"></button>
+                            </div>
+                            <p>A simple snackbar toast</p>
+                        </div>
+                        <div class="comp-example">
+                            <button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised"
+                                type="button">Show Snackbar</button>
+                            <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+                                <div class="mdl-snackbar__text"></div>
+                                <button class="mdl-snackbar__action" type="button"></button>
+                            </div>
+                            <p>A snackbar with a button inside</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--TOGGLES-->
+                <div class="component-mdl" id="toggles">
+                    <h3>Toggles</h3>
+                    <h5>Description</h5>
+                    <p>The Material Design Lite (MDL) checkbox component is an enhanced version of the standard HTML
+                        <code>&lt;input type="checkbox"&gt;</code> element. A checkbox consists of a small square and,
+                        typically, text that
+                        clearly communicates a binary condition that will be set or unset when the user clicks or
+                        touches it. Checkboxes typically, but not necessarily, appear in groups, and can be selected and
+                        deselected individually. The MDL checkbox component allows you to add display and click effects.
+                    </p>
+                    <h5>Uses</h5>
+                    <p>This feature can be used for:</p>
+                    <ul>
+                        <li>Allowing users to select items</li>
+                        <li>Letting users choose different options</li>
+                    </ul>
+                    <h5>Examples</h5>
+                    <div class="example">
+                        <div class="comp-example">
+                            <label for="chkbox1" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                                <input type="checkbox" id="chkbox1" class="mdl-checkbox__input">
+                                <span class="mdl-checkbox__label">Enable AutoSave</span>
+                            </label>
+                            <p>A checkbox with a ripple click effect.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--TABLES-->
+                <div class="component-mdl" id="tables">
+                    <h3>Tables</h3>
+                    <h5>Description</h5>
+                    <p>The Material Design Lite (MDL) data-table component is an enhanced version of the standard HTML
+                        <code>&lt;table&gt;</code>. A data-table consists of rows and columns of well-formatted data,
+                        presented with
+                        appropriate user interaction capabilities.</p>
+                    <h5>Uses</h5>
+                    <p>This feature can be used for:</p>
+                    <ul>
+                        <li>Displaying data in an organized way</li>
+                        <li>Letting users choose between different options</li>
+                    </ul>
+                    <h5>Examples</h5>
+                    <div class="example">
+                        <div class="comp-example">
+                            <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable">
+                                <thead>
+                                    <tr>
+                                        <th class="mdl-data-table__cell--non-numeric">Material</th>
+                                        <th>Quantity</th>
+                                        <th>Unit price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+                                        <td>250</td>
+                                        <td>$2.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+                                        <td>50</td>
+                                        <td>$1.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+                                        <td>10</td>
+                                        <td>$12.35</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>A data-table with a "master" select checkbox and individual row select checkboxes.</p>
+                        </div>
+                        <div class="comp-example">
+                            <table class="mdl-data-table mdl-js-data-table">
+                                <thead>
+                                    <tr>
+                                        <th class="mdl-data-table__cell--non-numeric">Name</th>
+                                        <th class="mdl-data-table__cell--non-numeric">Nickname</th>
+                                        <th>Age</th>
+                                        <th class="mdl-data-table__cell--non-numeric">Living?</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">John Lennon</td>
+                                        <td class="mdl-data-table__cell--non-numeric">The smart one</td>
+                                        <td>40</td>
+                                        <td class="mdl-data-table__cell--non-numeric">No</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">Paul McCartney</td>
+                                        <td class="mdl-data-table__cell--non-numeric">The cute one</td>
+                                        <td>73</td>
+                                        <td class="mdl-data-table__cell--non-numeric">Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">George Harrison</td>
+                                        <td class="mdl-data-table__cell--non-numeric">The shy one</td>
+                                        <td>58</td>
+                                        <td class="mdl-data-table__cell--non-numeric">No</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">Ringo Starr</td>
+                                        <td class="mdl-data-table__cell--non-numeric">The funny one</td>
+                                        <td>74</td>
+                                        <td class="mdl-data-table__cell--non-numeric">Yes</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>A data-table without select checkboxes containing mostly text data.</p>
+                        </div>
+                        <div class="comp-example">
+                            <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                                <thead>
+                                    <tr>
+                                        <th class="mdl-data-table__cell--non-numeric">Material</th>
+                                        <th>Quantity</th>
+                                        <th>Unit price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+                                        <td>25</td>
+                                        <td>$2.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+                                        <td>50</td>
+                                        <td>$1.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+                                        <td>10</td>
+                                        <td>$2.35</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>A data table with select checkboxes</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--TEXTFIELDS-->
+                <div class="component-mdl" id="textfields">
+                    <h3>Textfields</h3>
+                    <h5>Description</h5>
+                    <p>The Material Design Lite (MDL) text field component is an enhanced version of the standard HTML
+                        <code>&lt;input type="text"&gt;</code> and <code>&lt;input type="textarea"&gt;</code> elements.
+                        A text field consists of a horizontal
+                        line indicating where keyboard input can occur and, typically, text that clearly communicates
+                        the intended contents of the text field. The MDL text field component provides various types of
+                        text fields, and allows you to add both display and click effects.</p>
+                    <h5>Uses</h5>
+                    <p>This feature can be used for:</p>
+                    <ul>
+                        <li>Allowing users to type a message</li>
+                        <li>Getting a message in a form</li>
+                    </ul>
+                    <h5>Examples</h5>
+                    <div class="example">
+                        <div class="comp-example">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="fname">
+                                <label class="mdl-textfield__label" for="fname">First name</label>
+                            </div>
+                            <p>Single-line text field with a standard label.</p>
+                        </div>
+                        <div class="comp-example">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" pattern="[0-9]*" id="phone">
+                                <label class="mdl-textfield__label" for="phone">Phone</label>
+                                <span class="mdl-textfield__error">Digits only</span>
+                            </div>
+                            <p>Single-line text field with a standard label, pattern matching, and error message.</p>
+                        </div>
+                        <div class="comp-example">
+                            <form action="#">
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <textarea class="mdl-textfield__input" type="text" rows="3" id="sample5"></textarea>
+                                    <label class="mdl-textfield__label" for="sample5">Text lines...</label>
+                                </div>
+                            </form>
+                            <p>Floating Multiline Textfield </p>
+                        </div>
+                        <div class="comp-example">
+                            <form action="#">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                                    <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                                        <i class="material-icons">search</i>
+                                    </label>
+                                    <div class="mdl-textfield__expandable-holder">
+                                        <input class="mdl-textfield__input" type="text" id="sample6">
+                                        <label class="mdl-textfield__label" for="sample-expandable">Expandable
+                                            Input</label>
+                                    </div>
+                                </div>
+                            </form>
+                            <p>Expandable Textfield</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--TOOLTIPS-->
+                <div class="component-mdl" id="tooltips">
+                    <h3>Tooltips</h3>
+                    <h5>Description</h5>
+                    <p>The Material Design Lite (MDL) tooltip component is an enhanced version of the standard HTML
+                        tooltip as produced by the title attribute. A tooltip consists of text and/or an image that
+                        clearly communicates additional information about an element when the user hovers over or, in a
+                        touch-based UI, touches the element. The MDL tooltip component is pre-styled (colors, fonts, and
+                        other settings are contained in material.min.css) to provide a vivid, attractive visual element
+                        that displays related but typically non-essential content, e.g., a definition, clarification, or
+                        brief instruction.</p>
+                    <h5>Uses</h5>
+                    <p>This feature can be used for:</p>
+                    <ul>
+                        <li>Showing information about an element</li>
+                        <li>Guiding the user through your app</li>
+                    </ul>
+                    <h5>Examples</h5>
+                    <div class="example">
+                        <div class="comp-example">
+                            <div id="tt1" class="icon material-icons">add</div>
+                            <div class="mdl-tooltip" data-mdl-for="tt1">
+                            Follow
+                            </div>
+                            <p>Simple tooltip</p>
+                        </div>
+                        <div class="comp-example">
+                            <div id="tt2" class="icon material-icons">print</div>
+                            <div class="mdl-tooltip mdl-tooltip--large" for="tt2">
+                            Print
+                            </div>
+                            <p>Large tooltip</p>
+                        </div>
+                        <div class="comp-example">
+                            <div id="tt4" class="icon material-icons">share</div>
+                            <div class="mdl-tooltip" for="tt4">
+                            Share your content<br>via social media
+                            </div>
+                            <p>Multiline tooltip</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

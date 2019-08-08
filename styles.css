@@ -1,0 +1,15 @@
+a{
+    scroll-behavior: smooth;
+}
+
+#header{
+    z-index: 99;
+}
+
+#drawer{
+    padding-top: 50px;
+}
+
+main{
+    padding: 100px 50px;
+}
